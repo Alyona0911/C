@@ -3,19 +3,11 @@
 // либо задать на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
-void PrintArray(string[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"{array[i]} ");
-    }
-    Console.WriteLine();
-}
 
 void SecondArray (string [] array1, string [] array2  )
 {
-    int count = 0 ;
-    for( int i = 0; i < array1.Length; i++) 
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
     {
         if(array1[i].Length < 3)
         {
@@ -25,8 +17,11 @@ void SecondArray (string [] array1, string [] array2  )
     }
 }
 
-
 string [] array1 = new string[5] {"6746", "hi", "home", "world", "7685"};
 string [] array2 = new string [array1.Length] ;
 SecondArray ( array1, array2 );
-PrintArray(array2);
+Console.Write($"  [{String.Join(",", array1)}]  ->  [{String.Join(",", array2)}] "); 
+
+
+
+
